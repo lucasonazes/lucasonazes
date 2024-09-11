@@ -9,7 +9,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Grace Gate",
+  title: "Lucas Onazes",
 };
 
 export default function RootLayout({
