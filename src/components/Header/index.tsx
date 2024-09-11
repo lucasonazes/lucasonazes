@@ -10,28 +10,14 @@ import { getAccessToken, getUser } from "@/store/authSlice";
 
 const Header = () => {
   const router = useRouter();
-  const pathname = usePathname();
-  const token = useAppSelector(getAccessToken);
   const user = useAppSelector(getUser);
 
   const handleNavigateToHome = () => {
-    if (pathname === "/events") {
-      router.push("/");
-    } else {
-      router.push("/events");
-    }
-  };
-
-  const handleNavigateToSignIn = () => {
-    if (!token) {
-      router.push("/sign-in");
-    } else {
-      router.push("/me");
-    }
+    router.push("/");
   };
 
   return (
-    <div className="w-screen h-24 shadow-md sticky top-0 flex items-center justify-between z-10 pt-12 pb-5 pr-8 bg-graceBlack">
+    <div className="w-screen h-20 shadow-md sticky top-0 flex items-center justify-between z-10 pt-12 pb-5 pr-8 bg-graceBlack">
       <Button link onClick={handleNavigateToHome} className="-ml-5">
         <Image
           src="/logo.png"
@@ -44,7 +30,6 @@ const Header = () => {
       </Button>
       <Button
         link
-        onClick={handleNavigateToSignIn}
         className="flex items-center"
       >
         {user?.name ? (
