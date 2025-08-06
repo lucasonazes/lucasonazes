@@ -1,6 +1,6 @@
 ## Hello! I'm Lucas Onazes Fensterseifer 👋
 
-I'm a junior front-end developer passionate about technology and innovation. Here you can find some of my projects and follow my journey as a developer.
+I'm a developer passionate about technology and innovation. Here you can find some of my projects and follow my journey as a developer.
 
 ---
 
